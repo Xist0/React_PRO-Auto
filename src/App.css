@@ -6,9 +6,10 @@
 
 .block-rectangle-carts {
     width: 1640px;
+    position: relative;
     margin: auto;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
 }
 
@@ -21,6 +22,8 @@
     flex-direction: column;
     gap: 29px;
     padding: 56px 28px 0 28px;
+    cursor: pointer;
+    z-index: 9999;
 }
 
 .block-rectangle-cart>img {
@@ -43,10 +46,11 @@
     line-height: normal;
 }
 
-#cart-red {
+.runner {
     width: 282px;
+    position: absolute;
     height: 272px;
     background: #C53720;
-    -webkit-clip-path: polygon(0 0, 0 100%, 100% 100%, 100% 25%, 75% 0);
     clip-path: polygon(0px 75px, 0px 100%, 75% 100.37%, 100.00% 75%, 100% 0px, 25% 0px);
+    transition: left 0.3s, idth 0.3s;
 }
