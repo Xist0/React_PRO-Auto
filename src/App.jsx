@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react'
 import './App.css'
 import Header from './components/Header'
 import Footer from './components/Footer'
+import Catalog from './components/Catalog';
 
 function App() {
 
@@ -53,8 +54,8 @@ function App() {
             < a href="#"><img src="/src/img/arrow.svg" id='carts-arrow' alt="" /></a>
           </div>
         </div>
-        
       </div>
+        <Catalog/>
       <Footer />
     </>
   )

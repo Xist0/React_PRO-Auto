@@ -1,0 +1,144 @@
+@import url('https://fonts.cdnfonts.com/css/geometria');
+
+.container-block-main {
+    width: 100%;
+    background: url(/src/img/catalog-fon.svg);
+    background-size: cover;
+}
+
+.container-block {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 1640px;
+    margin: auto;
+    padding: 88px 0;
+    flex-direction: column;
+}
+
+.container-block-text {
+    display: flex;
+    margin: auto;
+    width: 892px;
+    flex-direction: column;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.container-block-line {
+    width: 856px;
+    height: 4px;
+    background: var(--red2, #C53720);
+    margin: 8px auto 32px;
+}
+
+.container-block-text h1 {
+    width: 800px;
+    color: #1D1D1D;
+    text-align: center;
+    font-family: Geometria;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+.container-block-text h2 {
+    color: var(--black2, #1D1D1D);
+    text-align: center;
+    font-family: Geometria;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    width: 892px;
+}
+
+.container-block-carts {
+    display: flex;
+    padding-top: 36px;
+    width: calc(100% - 20%);
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 24px;
+    columns: 3;
+}
+
+.container-block-cart {
+    width: 360px;
+    height: 400px;
+    background: #000;
+}
+
+.container-block-cart-on {
+    display: none;
+    padding: 0 70px 66px 70px;
+    justify-content: end;
+}
+
+.container-block-cart:hover>.container-block-cart-on {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+    opacity: 0.8;
+    background: #000;
+
+}
+
+.container-block-cart:hover>.container-block-cart-on>h1 {
+    color: #FFF;
+    text-align: center;
+    font-family: Geometria;
+    font-size: 24px;
+    padding-bottom: 30%;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.container-block-cart:hover>.container-block-cart-on>button {
+    width: 216px;
+    justify-content: flex-end;
+    height: 52px;
+    border: 4px solid var(--red2, #C53720);
+    background: transparent;
+}
+
+.container-block-cart:hover>.container-block-cart-on button h1 {
+    color: #FFF;
+    text-align: center;
+    font-family: Geometria;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+
+}
+
+#block-akb {
+    background: url(/src/img/catalog/akb.svg);
+}
+
+#block-maslo {
+    background: url(/src/img/catalog/maslo.svg);
+}
+
+#block-polirov {
+    background: url(/src/img/catalog/polirov.svg);
+}
+
+#block-electronik {
+    background: url(/src/img/catalog/elecktrik.svg);
+}
+
+#block-xim {
+    background: url(/src/img/catalog/dvig.svg);
+}
+
+#block-rasxod {
+    background: url(/src/img/catalog/rashod.svg);
+}
