@@ -44,6 +44,7 @@
     font-style: normal;
     font-weight: 500;
     line-height: normal;
+    
 }
 
 .runner {
@@ -53,4 +54,5 @@
     background: #C53720;
     clip-path: polygon(0px 75px, 0px 100%, 75% 100.37%, 100.00% 75%, 100% 0px, 25% 0px);
     transition: left 0.3s, idth 0.3s;
+
 }

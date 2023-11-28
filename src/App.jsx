@@ -4,26 +4,28 @@ import Header from './components/Header'
 import Footer from './components/Footer'
 
 function App() {
+
   const [itemId, setItemid] = useState(0);
+
   useEffect(() => {
-    const runner = document.querySelector('.runner')
-    const items = [...document.querySelectorAll('.block-rectangle-cart')]
-    const block = document.querySelector('.container-block-rectangle')
+    const runner = document.querySelector(".runner");
+    const items = [...document.querySelectorAll(".block-rectangle-cart")];
+    const rectangle = document.querySelector(".container-block-rectangle");
 
     const runnerMove = (item) => {
-      runner.style.left = item.offsetLeft + 'px';
-      runner.style.width = item.scrollWidth + 'px';
-    }
+      runner.style.left = item.offsetLeft + "px";
+      runner.style.width = item.scrollWidth + "px";
+    };
 
     const mouseMove = ({ target }) => {
-      if (target.classList.containst('block-rectangle-cart')) runnerMove(target)
-      else runnerMove(items[itemId])
-    }
+      if (target.classList.contains("block-rectangle-cart")) runnerMove(target);
+      else runnerMove(items[itemId]);
+    };
 
-    runnerMove(items[itemId])
-    block.addEventListener('mousemove', mouseMove)
-    return () => block.removeEventListener('mousemove', mouseMove)
-  }, [itemId])
+    runnerMove(items[itemId]);
+    rectangle.addEventListener("mousemove", mouseMove);
+    return () => rectangle.removeEventListener("mousemove", mouseMove);
+  }, [itemId]);
 
   return (
     <>
@@ -51,6 +53,7 @@ function App() {
             < a href="#"><img src="/src/img/arrow.svg" id='carts-arrow' alt="" /></a>
           </div>
         </div>
+        
       </div>
       <Footer />
     </>
