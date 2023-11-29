@@ -31,7 +31,8 @@ header {
 
 .header-menu-nav {
     margin: auto;
-    width: 1640px;
+    width: 100%;
+    max-width: calc(100% - 20%);
     height: 100px;
     display: flex;
     align-items: center;

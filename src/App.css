@@ -5,7 +5,8 @@
 }
 
 .block-rectangle-carts {
-    width: 1640px;
+    width: 100%;
+    max-width: 1200px;
     position: relative;
     margin: auto;
     display: flex;
