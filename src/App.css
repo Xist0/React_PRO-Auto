@@ -45,7 +45,7 @@
     font-style: normal;
     font-weight: 500;
     line-height: normal;
-    
+
 }
 
 .runner {
@@ -56,4 +56,91 @@
     clip-path: polygon(0px 75px, 0px 100%, 75% 100.37%, 100.00% 75%, 100% 0px, 25% 0px);
     transition: left 0.3s, idth 0.3s;
 
+}
+
+.container-block-services {
+    width: 100%;
+    margin: auto;
+    background-image: url(/src/img/topoboi.svg), radial-gradient(24.05% 24.05% at 50% 56.14%, rgba(14, 14, 14, 0.70) 0%, rgba(14, 14, 14, 0.97) 100%);
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: overlay;
+}
+
+.block-services {
+    display: flex;
+    padding: 88px 0 98px 0;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    max-width: 1200px;
+    width: 100%;
+}
+
+.block-services h1 {
+    color: #FFF;
+    text-align: center;
+    font-family: Geometria;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+.block-services h2 {
+    color: #FFF;
+    text-align: center;
+    font-family: Geometria;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    width: 892px;
+}
+
+.block-services-line {
+    margin: 10px 0 32px;
+    width: 170px;
+    height: 4px;
+    background: var(--red2, #C53720);
+}
+
+.block-services-main {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.block-services-main-content-txt h1 {
+    color: #FFF;
+    font-family: Geometria;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    width: 286px;
+    height: 36px;
+}
+
+.block-services-main-content-txt h2 {
+    color: #FFF;
+    font-family: Geometria;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    width: 352px;
+    height: 68px;
+}
+
+.block-services-main-img {
+    width: 44%;
+    flex-direction: column;
+}
+
+.block-services-main-content {
+    display: flex;
+    flex-direction: column;
+    width: 44%;
 }

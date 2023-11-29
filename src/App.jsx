@@ -84,6 +84,44 @@ function App() {
         </div>
       </div>
       <Catalog />
+      <div className="container-block-services">
+        <div className="block-services">
+          <h1>услуги</h1>
+          <div className="block-services-line"></div>
+          <h2>Менеджеры компании с радостью ответят на ваши вопросы и помогут с выбором продукции.</h2>
+          <div className="block-services-main">
+            <div className="block-services-main-content">
+              <div className="block-services-main-content-img">
+                <img src="./img/servisec-call.png" alt="" />
+              </div>
+              <div className="block-services-main-content-txt">
+                <h1>БЕСПЛАТНАЯ КОНСУЛЬТАЦИЯ СПЕЦИАЛИСТА</h1>
+                <h2>Поможем с выбором аккумулятора, моторного масла и аксессуаров для автомобиля под ваши требования. </h2>
+              </div>
+              <div className="block-services-main-content-img">
+                <img src="./img/servisec-line-left.svg" alt="" />
+                <img src="./img/servisec-tread.svg" alt="" />
+                <img src="./img/servisec-line-right.svg" alt="" />
+              </div>
+              <div className="block-services-main-content-txt">
+                <h1>ОБМЕН СТАРОГО АККУМУЛЯТОРА НА НОВЫЙ</h1>
+                <h2>Поможем с выбором аккумулятора, моторного масла и аксессуаров для автомобиля под ваши требования. </h2>
+              </div>
+              <div className="block-services-main-content-img">
+                <img src="./img/servisec-diagnostick.svg" alt="" />
+              </div>
+              <div className="block-services-main-content-txt">
+                <h1>БЕСПЛАТНАЯ ДИАГНОСТИКА АККУМУЛЯТОРА</h1>
+                <h2>Приезжайте к нам и мы бесплатно проведём диагностику вашего аккумулятора! </h2>
+              </div>
+            </div>
+            <div className="block-services-main-img">
+              <img src="./img/поддержка.svg" alt="" />
+
+            </div>
+          </div>
+        </div>
+      </div>
       <Footer />
     </>
   )
