@@ -7,28 +7,7 @@ import Catalog from './components/Catalog';
 function App() {
 
   const [currentElement, setCurrentElem] = useState();
-
   const runner = useRef()
-
-  // useEffect(() => {
-  //   const runner = document.querySelector(".runner");
-  //   const items = [...document.querySelectorAll(".block-rectangle-cart")];
-  //   const rectangle = document.querySelector(".container-block-rectangle");
-
-  //   const runnerMove = (item) => {
-  //     runner.style.left = item.offsetLeft + "px";
-  //     runner.style.width = item.scrollWidth + "px";
-  //   };
-
-  //   const mouseMove = ({ target }) => {
-  //     if (target.classList.contains("block-rectangle-cart")) runnerMove(target);
-  //     else runnerMove(items[itemId]);
-  //   };
-
-  //   runnerMove(items[itemId]);
-  //   rectangle.addEventListener("mouseenter", mouseMove);
-  //   return () => rectangle.removeEventListener("mousemove", mouseMove);
-  // }, [itemId]);
 
   const mouseEnterHandler = (e) => {
     runner.current.style.left = e.target.offsetLeft + "px";
